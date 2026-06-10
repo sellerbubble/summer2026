@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIAA 2205 L01 - Introduction to Artificial Intelligence</title>
+  <link rel="icon" href="./hkust-logo.png" type="image/x-icon">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      color: #243142;
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 1180px;
+      overflow-wrap: break-word;
+      padding: 24px;
+    }
+    a { color: #005f9e; }
+    .header {
+      align-items: center;
+      border-bottom: 1px solid #e4e8ee;
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+      padding: 20px 0 28px;
+    }
+    .eyebrow {
+      color: #8a6b24;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: #162334;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #40516a;
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .logo { height: 96px; max-width: 100%; width: auto; }
+    .section { padding: 28px 0; }
+    .section h3 {
+      color: #1f3147;
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+    }
+    .meta-list {
+      border-collapse: collapse;
+      max-width: 780px;
+      width: 100%;
+    }
+    .meta-list td {
+      border-bottom: 1px solid #edf0f4;
+      padding: 9px 10px 9px 0;
+      vertical-align: top;
+    }
+    .meta-list td:first-child {
+      color: #1f3147;
+      font-weight: 700;
+      width: 180px;
+    }
+    .schedule-table {
+      border-collapse: collapse;
+      margin-top: 12px;
+      width: 100%;
+    }
+    .schedule-table th,
+    .schedule-table td {
+      border: 1px solid #dce2ea;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .schedule-table th {
+      background: #a68137;
+      color: white;
+      font-weight: 700;
+    }
+    .schedule-table tr:nth-child(even) { background: #f8fafc; }
+    .schedule-wrap { overflow-x: auto; }
+    ul { padding-left: 18px; }
+    @media (max-width: 720px) {
+      body { padding: 18px 28px; }
+      .header { align-items: flex-start; flex-direction: column; }
+      .logo { height: 78px; }
+      .meta-list td { display: block; width: 100%; }
+      .meta-list td:first-child { border-bottom: 0; padding-bottom: 0; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div>
+      <p class="eyebrow">2025-26 Summer · L01 (6023)</p>
+      <h1>AIAA 2205</h1>
+      <h2>Introduction to Artificial Intelligence</h2>
+      <p><strong>Instructor:</strong> <a href="https://liliu-avril.github.io/">LIU, Li</a></p>
+      <p><strong>Teaching Assistant:</strong> Wenhao Li (wli954@connect.hkust-gz.edu.cn)</p>
+    </div>
+    <img class="logo" src="./hkust-gz.logo.CN.jpeg" alt="HKUST(GZ) Logo">
+  </header>
+
+  <main>
+    <section class="section">
+      <h3>Course Description</h3>
+      <p>The objective of this course is to present an overview of the principles and practices of AI and to address complex real-world problems. Through introduction of AI tools and techniques, the course helps students develop a basic understanding of problem solving, search, theorem proving, knowledge representation, reasoning and planning methods of AI; and develop practical applications in vision, language, and so on. Topics include foundations such as search, knowledge representation, machine learning and natural language understanding, as well as applications especially for speech and healthcare.</p>
+    </section>
+
+    <section class="section">
+      <h3>Lecture</h3>
+      <table class="meta-list">
+        <tr>
+          <td>Class Time</td>
+          <td>WeFr 03:00PM - 05:50PM</td>
+        </tr>
+        <tr>
+          <td>Location</td>
+          <td>Rm 228, E2</td>
+        </tr>
+        <tr>
+          <td>Course Period</td>
+          <td>15-JUN-2026 - 29-JUL-2026</td>
+        </tr>
+        <tr>
+          <td>Class Type</td>
+          <td>In-Person Course</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h3>Course Work & Assessment</h3>
+      <table class="meta-list">
+        <tr>
+          <td>Score Assessment</td>
+          <td>Final Exam (60%) + Written Assignment (15%) + Project (25%)</td>
+        </tr>
+        <tr>
+          <td>Final Exam</td>
+          <td>The final exam accounts for 60% of your final grade. More details about the exam format and requirements will be provided during the course.</td>
+        </tr>
+        <tr>
+          <td>Written Assignment</td>
+          <td>Written assignments account for 15% of your final grade. All submissions must be made via Canvas.</td>
+        </tr>
+        <tr>
+          <td>Project</td>
+          <td>The project accounts for 25% of your final grade. More details about the project requirements will be provided during the course.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h3>Target Students & Prerequisites</h3>
+      <table class="meta-list">
+        <tr>
+          <td>Target Students</td>
+          <td>Undergraduate students in computer science or related fields</td>
+        </tr>
+        <tr>
+          <td>Prerequisites</td>
+          <td>Basic knowledge of Python programming, linear algebra, and probabilities</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h3>Course Schedule</h3>
+      <div class="schedule-wrap">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Lecture</th>
+              <th>Date</th>
+              <th>Topic</th>
+              <th>Instructor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>June 17</td>
+              <td>Introduction to AI: Concept, Data, Model and Task</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>June 19</td>
+              <td>Regression and Classification</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>June 24</td>
+              <td>Optimization</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>June 26</td>
+              <td>CNN and Object Detection</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>July 1</td>
+              <td>RNN, Transformer and LLM 1</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>July 3</td>
+              <td>RNN, Transformer and LLM 2</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>July 8</td>
+              <td>VAE+GAN</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>July 10</td>
+              <td>Diffusion Model</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>July 15</td>
+              <td>Introduction to Few-shot Learning</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>July 17</td>
+              <td>Introduction to Multi-modal Learning</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>July 22</td>
+              <td>Human Computer Interaction: Speech Recognition</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>July 24</td>
+              <td>Human Computer Interaction: Speech Synthesis</td>
+              <td>LIU, Li</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>July 29</td>
+              <td>Introduction to AI Security</td>
+              <td>LIU, Li</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Course Guidelines & Policies</h3>
+      <table class="meta-list">
+        <tr>
+          <td>Collaboration Policy</td>
+          <td>Students may discuss course materials for learning purposes, but submitted work must be their own unless otherwise specified. Any collaboration should be declared in submitted assignments.</td>
+        </tr>
+        <tr>
+          <td>AI Tools Policy</td>
+          <td>AI tools may be used as learning support when permitted by the course staff. Students should understand and be able to explain all submitted work.</td>
+        </tr>
+        <tr>
+          <td>Communication</td>
+          <td>Questions and discussions are encouraged during class. Please contact the teaching assistant by email for course logistics and assignment support.</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
